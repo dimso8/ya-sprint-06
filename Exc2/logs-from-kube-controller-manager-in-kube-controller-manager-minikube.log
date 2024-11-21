@@ -1,0 +1,440 @@
+I1121 08:12:44.713880       1 serving.go:386] Generated self-signed cert in-memory
+I1121 08:12:45.505850       1 controllermanager.go:197] "Starting" version="v1.31.0"
+I1121 08:12:45.506097       1 controllermanager.go:199] "Golang settings" GOGC="" GOMAXPROCS="" GOTRACEBACK=""
+I1121 08:12:45.508973       1 secure_serving.go:213] Serving securely on 127.0.0.1:10257
+I1121 08:12:45.510679       1 dynamic_cafile_content.go:160] "Starting controller" name="request-header::/var/lib/minikube/certs/front-proxy-ca.crt"
+I1121 08:12:45.511427       1 dynamic_cafile_content.go:160] "Starting controller" name="client-ca-bundle::/var/lib/minikube/certs/ca.crt"
+I1121 08:12:45.510726       1 tlsconfig.go:243] "Starting DynamicServingCertificateController"
+I1121 08:12:48.678071       1 controllermanager.go:797] "Started controller" controller="serviceaccount-token-controller"
+I1121 08:12:48.678659       1 shared_informer.go:313] Waiting for caches to sync for tokens
+I1121 08:12:48.693445       1 controllermanager.go:797] "Started controller" controller="job-controller"
+I1121 08:12:48.693511       1 job_controller.go:226] "Starting job controller" logger="job-controller"
+I1121 08:12:48.693528       1 shared_informer.go:313] Waiting for caches to sync for job
+I1121 08:12:48.714108       1 controllermanager.go:797] "Started controller" controller="persistentvolume-binder-controller"
+I1121 08:12:48.714888       1 pv_controller_base.go:308] "Starting persistent volume controller" logger="persistentvolume-binder-controller"
+I1121 08:12:48.714915       1 shared_informer.go:313] Waiting for caches to sync for persistent volume
+I1121 08:12:48.748327       1 controllermanager.go:797] "Started controller" controller="clusterrole-aggregation-controller"
+I1121 08:12:48.748761       1 clusterroleaggregation_controller.go:194] "Starting ClusterRoleAggregator controller" logger="clusterrole-aggregation-controller"
+I1121 08:12:48.748782       1 shared_informer.go:313] Waiting for caches to sync for ClusterRoleAggregator
+I1121 08:12:48.768098       1 controllermanager.go:797] "Started controller" controller="root-ca-certificate-publisher-controller"
+I1121 08:12:48.768124       1 controllermanager.go:749] "Controller is disabled by a feature gate" controller="resourceclaim-controller" requiredFeatureGates=["DynamicResourceAllocation"]
+I1121 08:12:48.768314       1 publisher.go:107] "Starting root CA cert publisher controller" logger="root-ca-certificate-publisher-controller"
+I1121 08:12:48.768332       1 shared_informer.go:313] Waiting for caches to sync for crt configmap
+I1121 08:12:48.780583       1 shared_informer.go:320] Caches are synced for tokens
+I1121 08:12:48.784343       1 controllermanager.go:797] "Started controller" controller="persistentvolume-expander-controller"
+I1121 08:12:48.784687       1 expand_controller.go:328] "Starting expand controller" logger="persistentvolume-expander-controller"
+I1121 08:12:48.784701       1 shared_informer.go:313] Waiting for caches to sync for expand
+I1121 08:12:48.803621       1 controllermanager.go:797] "Started controller" controller="pod-garbage-collector-controller"
+I1121 08:12:48.803958       1 gc_controller.go:99] "Starting GC controller" logger="pod-garbage-collector-controller"
+I1121 08:12:48.803974       1 shared_informer.go:313] Waiting for caches to sync for GC
+I1121 08:12:48.829495       1 controllermanager.go:797] "Started controller" controller="serviceaccount-controller"
+I1121 08:12:48.829742       1 serviceaccounts_controller.go:114] "Starting service account controller" logger="serviceaccount-controller"
+I1121 08:12:48.829783       1 shared_informer.go:313] Waiting for caches to sync for service account
+I1121 08:12:48.855706       1 controllermanager.go:797] "Started controller" controller="certificatesigningrequest-cleaner-controller"
+I1121 08:12:48.856289       1 cleaner.go:83] "Starting CSR cleaner controller" logger="certificatesigningrequest-cleaner-controller"
+I1121 08:12:48.979755       1 controllermanager.go:797] "Started controller" controller="bootstrap-signer-controller"
+I1121 08:12:48.980327       1 shared_informer.go:313] Waiting for caches to sync for bootstrap_signer
+I1121 08:12:48.988606       1 controllermanager.go:797] "Started controller" controller="token-cleaner-controller"
+I1121 08:12:48.988852       1 tokencleaner.go:117] "Starting token cleaner controller" logger="token-cleaner-controller"
+I1121 08:12:48.988893       1 shared_informer.go:313] Waiting for caches to sync for token_cleaner
+I1121 08:12:48.988906       1 shared_informer.go:320] Caches are synced for token_cleaner
+E1121 08:12:49.000916       1 core.go:105] "Failed to start service controller" err="WARNING: no cloud provider provided, services of type LoadBalancer will fail" logger="service-lb-controller"
+I1121 08:12:49.000982       1 controllermanager.go:775] "Warning: skipping controller" controller="service-lb-controller"
+I1121 08:12:49.011204       1 controllermanager.go:797] "Started controller" controller="deployment-controller"
+I1121 08:12:49.011228       1 controllermanager.go:775] "Warning: skipping controller" controller="storage-version-migrator-controller"
+I1121 08:12:49.011330       1 deployment_controller.go:173] "Starting controller" logger="deployment-controller" controller="deployment"
+I1121 08:12:49.011344       1 shared_informer.go:313] Waiting for caches to sync for deployment
+I1121 08:12:49.135080       1 controllermanager.go:797] "Started controller" controller="endpointslice-controller"
+I1121 08:12:49.135319       1 endpointslice_controller.go:281] "Starting endpoint slice controller" logger="endpointslice-controller"
+I1121 08:12:49.135379       1 shared_informer.go:313] Waiting for caches to sync for endpoint_slice
+I1121 08:12:49.382514       1 garbagecollector.go:146] "Starting controller" logger="garbage-collector-controller" controller="garbagecollector"
+I1121 08:12:49.382736       1 shared_informer.go:313] Waiting for caches to sync for garbage collector
+I1121 08:12:49.382661       1 controllermanager.go:797] "Started controller" controller="garbage-collector-controller"
+I1121 08:12:49.382816       1 graph_builder.go:351] "Running" logger="garbage-collector-controller" component="GraphBuilder"
+I1121 08:12:49.803814       1 controllermanager.go:797] "Started controller" controller="horizontal-pod-autoscaler-controller"
+I1121 08:12:49.804233       1 horizontal.go:201] "Starting HPA controller" logger="horizontal-pod-autoscaler-controller"
+I1121 08:12:49.804249       1 shared_informer.go:313] Waiting for caches to sync for HPA
+E1121 08:12:49.935028       1 core.go:274] "Failed to start cloud node lifecycle controller" err="no cloud provider provided" logger="cloud-node-lifecycle-controller"
+I1121 08:12:49.935208       1 controllermanager.go:775] "Warning: skipping controller" controller="cloud-node-lifecycle-controller"
+I1121 08:12:50.085590       1 controllermanager.go:797] "Started controller" controller="ttl-after-finished-controller"
+I1121 08:12:50.085681       1 controllermanager.go:749] "Controller is disabled by a feature gate" controller="storageversion-garbage-collector-controller" requiredFeatureGates=["APIServerIdentity","StorageVersionAPI"]
+I1121 08:12:50.085762       1 ttlafterfinished_controller.go:112] "Starting TTL after finished controller" logger="ttl-after-finished-controller"
+I1121 08:12:50.085775       1 shared_informer.go:313] Waiting for caches to sync for TTL after finished
+I1121 08:12:50.233782       1 controllermanager.go:797] "Started controller" controller="endpoints-controller"
+I1121 08:12:50.233940       1 endpoints_controller.go:182] "Starting endpoint controller" logger="endpoints-controller"
+I1121 08:12:50.233953       1 shared_informer.go:313] Waiting for caches to sync for endpoint
+I1121 08:12:50.407813       1 controllermanager.go:797] "Started controller" controller="replicationcontroller-controller"
+I1121 08:12:50.407959       1 replica_set.go:217] "Starting controller" logger="replicationcontroller-controller" name="replicationcontroller"
+I1121 08:12:50.407995       1 shared_informer.go:313] Waiting for caches to sync for ReplicationController
+I1121 08:12:50.842212       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="podtemplates"
+I1121 08:12:50.842307       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="controllerrevisions.apps"
+I1121 08:12:50.842329       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="horizontalpodautoscalers.autoscaling"
+I1121 08:12:50.842355       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="cronjobs.batch"
+I1121 08:12:50.842370       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="jobs.batch"
+I1121 08:12:50.842412       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="roles.rbac.authorization.k8s.io"
+I1121 08:12:50.842433       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="replicasets.apps"
+I1121 08:12:50.842464       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="networkpolicies.networking.k8s.io"
+I1121 08:12:50.842498       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="csistoragecapacities.storage.k8s.io"
+I1121 08:12:50.842520       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="leases.coordination.k8s.io"
+I1121 08:12:50.842556       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="rolebindings.rbac.authorization.k8s.io"
+I1121 08:12:50.842586       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="poddisruptionbudgets.policy"
+I1121 08:12:50.842643       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="deployments.apps"
+I1121 08:12:50.842674       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="daemonsets.apps"
+I1121 08:12:50.842693       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="endpoints"
+I1121 08:12:50.842710       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="statefulsets.apps"
+I1121 08:12:50.842732       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="ingresses.networking.k8s.io"
+I1121 08:12:50.842748       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="endpointslices.discovery.k8s.io"
+I1121 08:12:50.842801       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="serviceaccounts"
+I1121 08:12:50.842843       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="limitranges"
+I1121 08:12:50.842864       1 controllermanager.go:797] "Started controller" controller="resourcequota-controller"
+I1121 08:12:50.843430       1 resource_quota_controller.go:300] "Starting resource quota controller" logger="resourcequota-controller"
+I1121 08:12:50.843448       1 shared_informer.go:313] Waiting for caches to sync for resource quota
+I1121 08:12:50.843471       1 resource_quota_monitor.go:308] "QuotaMonitor running" logger="resourcequota-controller"
+I1121 08:12:50.929523       1 controllermanager.go:797] "Started controller" controller="statefulset-controller"
+I1121 08:12:50.952279       1 stateful_set.go:166] "Starting stateful set controller" logger="statefulset-controller"
+I1121 08:12:50.952309       1 shared_informer.go:313] Waiting for caches to sync for stateful set
+I1121 08:12:51.026098       1 controllermanager.go:797] "Started controller" controller="persistentvolume-attach-detach-controller"
+I1121 08:12:51.026240       1 attach_detach_controller.go:338] "Starting attach detach controller" logger="persistentvolume-attach-detach-controller"
+I1121 08:12:51.026253       1 shared_informer.go:313] Waiting for caches to sync for attach detach
+I1121 08:12:51.149651       1 controllermanager.go:797] "Started controller" controller="persistentvolume-protection-controller"
+I1121 08:12:51.149718       1 pv_protection_controller.go:81] "Starting PV protection controller" logger="persistentvolume-protection-controller"
+I1121 08:12:51.149732       1 shared_informer.go:313] Waiting for caches to sync for PV protection
+I1121 08:12:51.328627       1 controllermanager.go:797] "Started controller" controller="cronjob-controller"
+I1121 08:12:51.328926       1 cronjob_controllerv2.go:145] "Starting cronjob controller v2" logger="cronjob-controller"
+I1121 08:12:51.328939       1 shared_informer.go:313] Waiting for caches to sync for cronjob
+I1121 08:12:52.055780       1 controllermanager.go:797] "Started controller" controller="ttl-controller"
+I1121 08:12:52.056261       1 ttl_controller.go:127] "Starting TTL controller" logger="ttl-controller"
+I1121 08:12:52.056949       1 shared_informer.go:313] Waiting for caches to sync for TTL
+I1121 08:12:52.120549       1 node_lifecycle_controller.go:430] "Controller will reconcile labels" logger="node-lifecycle-controller"
+I1121 08:12:52.120628       1 controllermanager.go:797] "Started controller" controller="node-lifecycle-controller"
+I1121 08:12:52.120642       1 core.go:298] "Warning: configure-cloud-routes is set, but no cloud provider specified. Will not configure cloud provider routes." logger="node-route-controller"
+I1121 08:12:52.120729       1 controllermanager.go:775] "Warning: skipping controller" controller="node-route-controller"
+I1121 08:12:52.121080       1 node_lifecycle_controller.go:464] "Sending events to api server" logger="node-lifecycle-controller"
+I1121 08:12:52.121098       1 node_lifecycle_controller.go:475] "Starting node controller" logger="node-lifecycle-controller"
+I1121 08:12:52.121107       1 shared_informer.go:313] Waiting for caches to sync for taint
+I1121 08:12:52.156196       1 controllermanager.go:797] "Started controller" controller="legacy-serviceaccount-token-cleaner-controller"
+I1121 08:12:52.158719       1 legacy_serviceaccount_token_cleaner.go:103] "Starting legacy service account token cleaner controller" logger="legacy-serviceaccount-token-cleaner-controller"
+I1121 08:12:52.158888       1 shared_informer.go:313] Waiting for caches to sync for legacy-service-account-token-cleaner
+I1121 08:12:52.221559       1 controllermanager.go:797] "Started controller" controller="taint-eviction-controller"
+I1121 08:12:52.233481       1 taint_eviction.go:281] "Starting" logger="taint-eviction-controller" controller="taint-eviction-controller"
+I1121 08:12:52.233540       1 taint_eviction.go:287] "Sending events to api server" logger="taint-eviction-controller"
+I1121 08:12:52.233569       1 shared_informer.go:313] Waiting for caches to sync for taint-eviction-controller
+I1121 08:12:52.246095       1 controllermanager.go:797] "Started controller" controller="endpointslice-mirroring-controller"
+I1121 08:12:52.246657       1 endpointslicemirroring_controller.go:227] "Starting EndpointSliceMirroring controller" logger="endpointslice-mirroring-controller"
+I1121 08:12:52.246675       1 shared_informer.go:313] Waiting for caches to sync for endpoint_slice_mirroring
+I1121 08:12:52.301871       1 certificate_controller.go:120] "Starting certificate controller" logger="certificatesigningrequest-signing-controller" name="csrsigning-kubelet-serving"
+I1121 08:12:52.301937       1 shared_informer.go:313] Waiting for caches to sync for certificate-csrsigning-kubelet-serving
+I1121 08:12:52.301983       1 dynamic_serving_content.go:135] "Starting controller" name="csr-controller::/var/lib/minikube/certs/ca.crt::/var/lib/minikube/certs/ca.key"
+I1121 08:12:52.304632       1 certificate_controller.go:120] "Starting certificate controller" logger="certificatesigningrequest-signing-controller" name="csrsigning-kubelet-client"
+I1121 08:12:52.304689       1 shared_informer.go:313] Waiting for caches to sync for certificate-csrsigning-kubelet-client
+I1121 08:12:52.304785       1 certificate_controller.go:120] "Starting certificate controller" logger="certificatesigningrequest-signing-controller" name="csrsigning-kube-apiserver-client"
+I1121 08:12:52.304801       1 shared_informer.go:313] Waiting for caches to sync for certificate-csrsigning-kube-apiserver-client
+I1121 08:12:52.305076       1 controllermanager.go:797] "Started controller" controller="certificatesigningrequest-signing-controller"
+I1121 08:12:52.306453       1 dynamic_serving_content.go:135] "Starting controller" name="csr-controller::/var/lib/minikube/certs/ca.crt::/var/lib/minikube/certs/ca.key"
+I1121 08:12:52.306607       1 dynamic_serving_content.go:135] "Starting controller" name="csr-controller::/var/lib/minikube/certs/ca.crt::/var/lib/minikube/certs/ca.key"
+I1121 08:12:52.307694       1 certificate_controller.go:120] "Starting certificate controller" logger="certificatesigningrequest-signing-controller" name="csrsigning-legacy-unknown"
+I1121 08:12:52.307748       1 shared_informer.go:313] Waiting for caches to sync for certificate-csrsigning-legacy-unknown
+I1121 08:12:52.307774       1 dynamic_serving_content.go:135] "Starting controller" name="csr-controller::/var/lib/minikube/certs/ca.crt::/var/lib/minikube/certs/ca.key"
+I1121 08:12:52.401515       1 range_allocator.go:112] "No Secondary Service CIDR provided. Skipping filtering out secondary service addresses" logger="node-ipam-controller"
+I1121 08:12:52.401769       1 controllermanager.go:797] "Started controller" controller="node-ipam-controller"
+I1121 08:12:52.406516       1 node_ipam_controller.go:141] "Starting ipam controller" logger="node-ipam-controller"
+I1121 08:12:52.406697       1 shared_informer.go:313] Waiting for caches to sync for node
+I1121 08:12:52.627997       1 controllermanager.go:797] "Started controller" controller="validatingadmissionpolicy-status-controller"
+I1121 08:12:52.628332       1 shared_informer.go:313] Waiting for caches to sync for validatingadmissionpolicy-status
+I1121 08:12:52.748019       1 controllermanager.go:797] "Started controller" controller="ephemeral-volume-controller"
+I1121 08:12:52.748119       1 controllermanager.go:749] "Controller is disabled by a feature gate" controller="service-cidr-controller" requiredFeatureGates=["MultiCIDRServiceAllocator"]
+I1121 08:12:52.801101       1 controller.go:173] "Starting ephemeral volume controller" logger="ephemeral-volume-controller"
+I1121 08:12:52.801160       1 shared_informer.go:313] Waiting for caches to sync for ephemeral
+I1121 08:12:52.916842       1 controllermanager.go:797] "Started controller" controller="namespace-controller"
+I1121 08:12:52.917786       1 namespace_controller.go:202] "Starting namespace controller" logger="namespace-controller"
+I1121 08:12:52.918337       1 shared_informer.go:313] Waiting for caches to sync for namespace
+I1121 08:12:53.001576       1 controllermanager.go:797] "Started controller" controller="daemonset-controller"
+I1121 08:12:53.001963       1 daemon_controller.go:294] "Starting daemon sets controller" logger="daemonset-controller"
+I1121 08:12:53.002014       1 shared_informer.go:313] Waiting for caches to sync for daemon sets
+I1121 08:12:53.017074       1 controllermanager.go:797] "Started controller" controller="replicaset-controller"
+I1121 08:12:53.017434       1 replica_set.go:217] "Starting controller" logger="replicaset-controller" name="replicaset"
+I1121 08:12:53.017455       1 shared_informer.go:313] Waiting for caches to sync for ReplicaSet
+I1121 08:12:53.216721       1 controllermanager.go:797] "Started controller" controller="disruption-controller"
+I1121 08:12:53.227130       1 disruption.go:452] "Sending events to api server." logger="disruption-controller"
+I1121 08:12:53.227489       1 disruption.go:463] "Starting disruption controller" logger="disruption-controller"
+I1121 08:12:53.230576       1 shared_informer.go:313] Waiting for caches to sync for disruption
+I1121 08:12:53.238585       1 controllermanager.go:797] "Started controller" controller="certificatesigningrequest-approving-controller"
+I1121 08:12:53.238823       1 certificate_controller.go:120] "Starting certificate controller" logger="certificatesigningrequest-approving-controller" name="csrapproving"
+I1121 08:12:53.238879       1 shared_informer.go:313] Waiting for caches to sync for certificate-csrapproving
+I1121 08:12:53.341565       1 controllermanager.go:797] "Started controller" controller="persistentvolumeclaim-protection-controller"
+I1121 08:12:53.349632       1 pvc_protection_controller.go:105] "Starting PVC protection controller" logger="persistentvolumeclaim-protection-controller"
+I1121 08:12:53.349819       1 shared_informer.go:313] Waiting for caches to sync for PVC protection
+I1121 08:12:53.414374       1 shared_informer.go:313] Waiting for caches to sync for resource quota
+I1121 08:12:53.415243       1 shared_informer.go:320] Caches are synced for node
+I1121 08:12:53.415325       1 range_allocator.go:171] "Sending events to api server" logger="node-ipam-controller"
+I1121 08:12:53.415359       1 range_allocator.go:177] "Starting range CIDR allocator" logger="node-ipam-controller"
+I1121 08:12:53.415365       1 shared_informer.go:313] Waiting for caches to sync for cidrallocator
+I1121 08:12:53.415372       1 shared_informer.go:320] Caches are synced for cidrallocator
+I1121 08:12:53.421133       1 actual_state_of_world.go:540] "Failed to update statusUpdateNeeded field in actual state of world" logger="persistentvolume-attach-detach-controller" err="Failed to set statusUpdateNeeded to needed true, because nodeName=\"minikube\" does not exist"
+I1121 08:12:53.421484       1 shared_informer.go:320] Caches are synced for namespace
+I1121 08:12:53.424688       1 shared_informer.go:313] Waiting for caches to sync for garbage collector
+I1121 08:12:53.431357       1 shared_informer.go:320] Caches are synced for service account
+I1121 08:12:53.504603       1 shared_informer.go:320] Caches are synced for TTL
+I1121 08:12:53.513341       1 shared_informer.go:320] Caches are synced for HPA
+I1121 08:12:53.513609       1 shared_informer.go:320] Caches are synced for ReplicationController
+I1121 08:12:53.513815       1 shared_informer.go:320] Caches are synced for deployment
+I1121 08:12:53.519394       1 shared_informer.go:320] Caches are synced for ReplicaSet
+I1121 08:12:53.522052       1 range_allocator.go:422] "Set node PodCIDR" logger="node-ipam-controller" node="minikube" podCIDRs=["10.244.0.0/24"]
+I1121 08:12:53.522079       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 08:12:53.549758       1 shared_informer.go:320] Caches are synced for PV protection
+I1121 08:12:53.600656       1 shared_informer.go:320] Caches are synced for disruption
+I1121 08:12:53.600692       1 shared_informer.go:320] Caches are synced for taint-eviction-controller
+I1121 08:12:53.600798       1 shared_informer.go:320] Caches are synced for legacy-service-account-token-cleaner
+I1121 08:12:53.602167       1 shared_informer.go:320] Caches are synced for daemon sets
+I1121 08:12:53.605548       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 08:12:53.606334       1 shared_informer.go:320] Caches are synced for GC
+I1121 08:12:53.609825       1 shared_informer.go:320] Caches are synced for validatingadmissionpolicy-status
+I1121 08:12:53.614063       1 shared_informer.go:320] Caches are synced for stateful set
+I1121 08:12:53.622364       1 shared_informer.go:320] Caches are synced for PVC protection
+I1121 08:12:53.625064       1 shared_informer.go:320] Caches are synced for persistent volume
+I1121 08:12:53.625426       1 shared_informer.go:320] Caches are synced for taint
+I1121 08:12:53.625575       1 node_lifecycle_controller.go:1232] "Initializing eviction metric for zone" logger="node-lifecycle-controller" zone=""
+I1121 08:12:53.626177       1 node_lifecycle_controller.go:884] "Missing timestamp for Node. Assuming now as a timestamp" logger="node-lifecycle-controller" node="minikube"
+I1121 08:12:53.626261       1 node_lifecycle_controller.go:1078] "Controller detected that zone is now in new state" logger="node-lifecycle-controller" zone="" newState="Normal"
+I1121 08:12:53.626526       1 shared_informer.go:320] Caches are synced for attach detach
+I1121 08:12:53.627419       1 shared_informer.go:320] Caches are synced for endpoint_slice_mirroring
+I1121 08:12:53.634319       1 shared_informer.go:320] Caches are synced for endpoint
+I1121 08:12:53.638892       1 shared_informer.go:320] Caches are synced for endpoint_slice
+I1121 08:12:53.660133       1 shared_informer.go:320] Caches are synced for ClusterRoleAggregator
+I1121 08:12:53.703546       1 shared_informer.go:320] Caches are synced for ephemeral
+I1121 08:12:53.703575       1 shared_informer.go:320] Caches are synced for crt configmap
+I1121 08:12:53.703813       1 shared_informer.go:320] Caches are synced for expand
+I1121 08:12:53.704970       1 shared_informer.go:320] Caches are synced for bootstrap_signer
+I1121 08:12:53.718249       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 08:12:53.718941       1 shared_informer.go:320] Caches are synced for resource quota
+I1121 08:12:53.730907       1 shared_informer.go:320] Caches are synced for cronjob
+I1121 08:12:53.744440       1 shared_informer.go:320] Caches are synced for resource quota
+I1121 08:12:53.746136       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 08:12:53.810429       1 shared_informer.go:320] Caches are synced for certificate-csrsigning-legacy-unknown
+I1121 08:12:53.817080       1 shared_informer.go:320] Caches are synced for TTL after finished
+I1121 08:12:53.817095       1 shared_informer.go:320] Caches are synced for certificate-csrsigning-kubelet-serving
+I1121 08:12:53.819069       1 shared_informer.go:320] Caches are synced for job
+I1121 08:12:53.819366       1 shared_informer.go:320] Caches are synced for certificate-csrsigning-kube-apiserver-client
+I1121 08:12:53.819471       1 shared_informer.go:320] Caches are synced for certificate-csrsigning-kubelet-client
+I1121 08:12:53.839417       1 shared_informer.go:320] Caches are synced for certificate-csrapproving
+I1121 08:12:54.104871       1 shared_informer.go:320] Caches are synced for garbage collector
+I1121 08:12:54.104906       1 garbagecollector.go:157] "All resource monitors have synced. Proceeding to collect garbage" logger="garbage-collector-controller"
+I1121 08:12:54.124868       1 shared_informer.go:320] Caches are synced for garbage collector
+I1121 08:12:54.743823       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/coredns-6f6b679f8f" duration="1.015184836s"
+I1121 08:12:54.743823       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/metrics-server-84c5f94fbc" duration="576.175311ms"
+I1121 08:12:54.869706       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/metrics-server-84c5f94fbc" duration="125.535571ms"
+I1121 08:12:54.872446       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/metrics-server-84c5f94fbc" duration="2.54827ms"
+I1121 08:12:54.910128       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/coredns-6f6b679f8f" duration="166.253892ms"
+I1121 08:12:54.912681       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/metrics-server-84c5f94fbc" duration="48.614µs"
+I1121 08:12:54.915390       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/coredns-6f6b679f8f" duration="1.889574ms"
+I1121 08:12:57.483200       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/coredns-6f6b679f8f" duration="218.138µs"
+I1121 08:12:59.779301       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 08:13:03.562814       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/metrics-server-84c5f94fbc" duration="51.211µs"
+I1121 08:13:03.594325       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/metrics-server-84c5f94fbc" duration="10.562968ms"
+I1121 08:13:03.594480       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/metrics-server-84c5f94fbc" duration="49.018µs"
+I1121 08:13:20.438452       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 08:13:35.856808       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/coredns-6f6b679f8f" duration="29.773453ms"
+I1121 08:13:35.857150       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/coredns-6f6b679f8f" duration="172.849µs"
+I1121 08:17:49.419331       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/kubernetes-dashboard-695b96c756" duration="296.898099ms"
+E1121 08:17:49.431257       1 replica_set.go:560] "Unhandled Error" err="sync \"kubernetes-dashboard/kubernetes-dashboard-695b96c756\" failed with pods \"kubernetes-dashboard-695b96c756-\" is forbidden: error looking up service account kubernetes-dashboard/kubernetes-dashboard: serviceaccount \"kubernetes-dashboard\" not found" logger="UnhandledError"
+I1121 08:17:49.418770       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/dashboard-metrics-scraper-c5db448b4" duration="291.291334ms"
+E1121 08:17:49.431762       1 replica_set.go:560] "Unhandled Error" err="sync \"kubernetes-dashboard/dashboard-metrics-scraper-c5db448b4\" failed with pods \"dashboard-metrics-scraper-c5db448b4-\" is forbidden: error looking up service account kubernetes-dashboard/kubernetes-dashboard: serviceaccount \"kubernetes-dashboard\" not found" logger="UnhandledError"
+I1121 08:17:49.628400       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/dashboard-metrics-scraper-c5db448b4" duration="194.251925ms"
+I1121 08:17:49.633632       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/kubernetes-dashboard-695b96c756" duration="199.219691ms"
+I1121 08:17:49.698918       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/kubernetes-dashboard-695b96c756" duration="65.235001ms"
+I1121 08:17:49.701462       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/dashboard-metrics-scraper-c5db448b4" duration="72.966195ms"
+I1121 08:17:49.703848       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/kubernetes-dashboard-695b96c756" duration="67.198µs"
+I1121 08:17:49.706960       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/dashboard-metrics-scraper-c5db448b4" duration="109.16µs"
+I1121 08:17:49.831226       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/kubernetes-dashboard-695b96c756" duration="38.692µs"
+I1121 08:17:49.833883       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/dashboard-metrics-scraper-c5db448b4" duration="88.522µs"
+I1121 08:17:49.858130       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/kubernetes-dashboard-695b96c756" duration="157.179µs"
+I1121 08:17:49.899268       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/dashboard-metrics-scraper-c5db448b4" duration="132.082µs"
+I1121 08:18:14.278744       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/kubernetes-dashboard-695b96c756" duration="12.825039ms"
+I1121 08:18:14.278904       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/kubernetes-dashboard-695b96c756" duration="76.914µs"
+I1121 08:18:18.343875       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/dashboard-metrics-scraper-c5db448b4" duration="10.774904ms"
+I1121 08:18:18.344955       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/dashboard-metrics-scraper-c5db448b4" duration="95.667µs"
+I1121 08:18:27.356542       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 08:23:33.243149       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 08:28:40.702039       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 08:31:30.860240       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/metrics-server-84c5f94fbc" duration="249.380138ms"
+I1121 08:31:30.864765       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/metrics-server-84c5f94fbc" duration="543.369µs"
+E1121 08:33:36.945346       1 resource_quota_controller.go:446] "Unhandled Error" err="failed to discover resources: Get \"https://192.168.49.2:8443/api\": http2: client connection lost" logger="UnhandledError"
+W1121 08:33:37.156718       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.Service ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.158084       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.RoleBinding ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.158368       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.CSIStorageCapacity ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.158585       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.CronJob ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.158852       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.ValidatingAdmissionPolicy ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.159358       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.PodTemplate ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.163020       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.Namespace ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.164032       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.ReplicaSet ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.164442       1 reflector.go:484] k8s.io/client-go/metadata/metadatainformer/informer.go:138: watch of *v1.PartialObjectMetadata ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.164629       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.Job ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.570029       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.IngressClass ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.570385       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.PriorityClass ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.571878       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.EndpointSlice ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.572099       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.StatefulSet ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.572330       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.NetworkPolicy ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.572533       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.PriorityLevelConfiguration ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.663886       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.CertificateSigningRequest ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.664065       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.CSINode ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.664242       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.Role ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.664422       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.ReplicationController ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.664587       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.ClusterRoleBinding ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.747454       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.PersistentVolume ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.748705       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.ClusterRole ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.748787       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.ServiceAccount ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.755323       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.VolumeAttachment ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.755665       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.Node ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.755972       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.PodDisruptionBudget ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.756284       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v2.HorizontalPodAutoscaler ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.756412       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.RuntimeClass ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.756686       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.Secret ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.756991       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.PersistentVolumeClaim ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.757170       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.StorageClass ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.757363       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.ConfigMap ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.757500       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.DaemonSet ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.762149       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.MutatingWebhookConfiguration ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.762448       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.Pod ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.762621       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.Lease ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.762839       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.FlowSchema ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.763029       1 reflector.go:484] k8s.io/client-go/metadata/metadatainformer/informer.go:138: watch of *v1.PartialObjectMetadata ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.763359       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.Ingress ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.765486       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.Endpoints ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.765546       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.Deployment ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.766022       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.ValidatingWebhookConfiguration ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.766148       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.CSIDriver ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.766220       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.LimitRange ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.766341       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.ResourceQuota ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.766419       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.ValidatingAdmissionPolicyBinding ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W1121 08:33:37.776057       1 reflector.go:484] k8s.io/client-go/informers/factory.go:160: watch of *v1.ControllerRevision ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+I1121 08:33:37.156653       1 garbagecollector.go:828] "failed to discover preferred resources" logger="garbage-collector-controller" error="Get \"https://192.168.49.2:8443/api\": http2: client connection lost"
+E1121 08:34:15.291685       1 node_lifecycle_controller.go:978] "Error updating node" err="Put \"https://192.168.49.2:8443/api/v1/nodes/minikube/status\": net/http: TLS handshake timeout" logger="node-lifecycle-controller" node="minikube"
+I1121 08:34:17.418317       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/metrics-server-84c5f94fbc" duration="66.914µs"
+I1121 08:34:17.418613       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/dashboard-metrics-scraper-c5db448b4" duration="193.351µs"
+I1121 08:34:17.418735       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/kubernetes-dashboard-695b96c756" duration="99.72µs"
+E1121 08:34:17.419532       1 resource_quota_controller.go:446] "Unhandled Error" err="unable to retrieve the complete list of server APIs: metrics.k8s.io/v1beta1: stale GroupVersion discovery: metrics.k8s.io/v1beta1" logger="UnhandledError"
+I1121 08:34:17.399814       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/coredns-6f6b679f8f" duration="219.155µs"
+I1121 08:34:17.492379       1 garbagecollector.go:826] "failed to discover some groups" logger="garbage-collector-controller" groups="<internal error: json: unsupported type: map[schema.GroupVersion]error>"
+I1121 08:34:17.922880       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 08:34:17.933877       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 08:34:18.289414       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 08:34:18.388873       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/kubernetes-dashboard-695b96c756" duration="100.693744ms"
+I1121 08:34:18.389046       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/kubernetes-dashboard-695b96c756" duration="70.206µs"
+I1121 08:34:18.484056       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/coredns-6f6b679f8f" duration="158.443313ms"
+I1121 08:34:18.495511       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/coredns-6f6b679f8f" duration="96.638µs"
+I1121 08:34:18.713105       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/coredns-6f6b679f8f" duration="119.561845ms"
+I1121 08:34:18.713190       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/coredns-6f6b679f8f" duration="56.778µs"
+I1121 08:34:18.793933       1 controller_utils.go:151] "Failed to update status for pod" logger="node-lifecycle-controller" pod="kube-system/coredns-6f6b679f8f-m6x6q" err="Operation cannot be fulfilled on pods \"coredns-6f6b679f8f-m6x6q\": the object has been modified; please apply your changes to the latest version and try again"
+I1121 08:34:18.998123       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/dashboard-metrics-scraper-c5db448b4" duration="171.296225ms"
+I1121 08:34:18.998923       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/dashboard-metrics-scraper-c5db448b4" duration="250.221µs"
+E1121 08:34:19.088173       1 node_lifecycle_controller.go:758] "Unhandled Error" err="unable to mark all pods NotReady on node minikube: Operation cannot be fulfilled on pods \"coredns-6f6b679f8f-m6x6q\": the object has been modified; please apply your changes to the latest version and try again; queuing for retry" logger="UnhandledError"
+I1121 08:34:19.093269       1 node_lifecycle_controller.go:1036] "Controller detected that all Nodes are not-Ready. Entering master disruption mode" logger="node-lifecycle-controller"
+I1121 08:34:19.565335       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/dashboard-metrics-scraper-c5db448b4" duration="51.29096ms"
+I1121 08:34:19.568702       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/dashboard-metrics-scraper-c5db448b4" duration="85.737µs"
+I1121 08:34:23.828180       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/kubernetes-dashboard-695b96c756" duration="136.135074ms"
+I1121 08:34:23.829755       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/kubernetes-dashboard-695b96c756" duration="56.599µs"
+I1121 08:34:24.486759       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/coredns-6f6b679f8f" duration="243.227945ms"
+I1121 08:34:24.486884       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/coredns-6f6b679f8f" duration="60.902µs"
+I1121 08:34:24.615142       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/dashboard-metrics-scraper-c5db448b4" duration="303.482475ms"
+I1121 08:34:24.615604       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/dashboard-metrics-scraper-c5db448b4" duration="347.846µs"
+I1121 08:34:25.095584       1 controller_utils.go:151] "Failed to update status for pod" logger="node-lifecycle-controller" pod="kube-system/storage-provisioner" err="Operation cannot be fulfilled on pods \"storage-provisioner\": the object has been modified; please apply your changes to the latest version and try again"
+E1121 08:34:25.672025       1 node_lifecycle_controller.go:758] "Unhandled Error" err="unable to mark all pods NotReady on node minikube: Operation cannot be fulfilled on pods \"storage-provisioner\": the object has been modified; please apply your changes to the latest version and try again; queuing for retry" logger="UnhandledError"
+I1121 08:34:25.770330       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/kubernetes-dashboard-695b96c756" duration="94.16151ms"
+I1121 08:34:25.773361       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/kubernetes-dashboard-695b96c756" duration="60.642µs"
+I1121 08:34:25.935889       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/metrics-server-84c5f94fbc" duration="95.727µs"
+I1121 08:34:27.628543       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 08:34:27.653113       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 08:34:29.337466       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/coredns-6f6b679f8f" duration="63.282839ms"
+I1121 08:34:29.337949       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/coredns-6f6b679f8f" duration="114.214µs"
+I1121 08:34:29.362999       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/dashboard-metrics-scraper-c5db448b4" duration="28.885959ms"
+I1121 08:34:29.363151       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/dashboard-metrics-scraper-c5db448b4" duration="72.759µs"
+I1121 08:34:29.481733       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/kubernetes-dashboard-695b96c756" duration="27.022978ms"
+I1121 08:34:29.482970       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kubernetes-dashboard/kubernetes-dashboard-695b96c756" duration="42.908µs"
+I1121 08:34:30.680273       1 node_lifecycle_controller.go:1055] "Controller detected that some Nodes are Ready. Exiting master disruption mode" logger="node-lifecycle-controller"
+E1121 08:34:47.189800       1 resource_quota_controller.go:446] "Unhandled Error" err="unable to retrieve the complete list of server APIs: metrics.k8s.io/v1beta1: stale GroupVersion discovery: metrics.k8s.io/v1beta1" logger="UnhandledError"
+I1121 08:34:47.409501       1 garbagecollector.go:826] "failed to discover some groups" logger="garbage-collector-controller" groups="<internal error: json: unsupported type: map[schema.GroupVersion]error>"
+E1121 08:35:17.491867       1 resource_quota_controller.go:446] "Unhandled Error" err="unable to retrieve the complete list of server APIs: metrics.k8s.io/v1beta1: stale GroupVersion discovery: metrics.k8s.io/v1beta1" logger="UnhandledError"
+I1121 08:35:17.716421       1 garbagecollector.go:826] "failed to discover some groups" logger="garbage-collector-controller" groups="<internal error: json: unsupported type: map[schema.GroupVersion]error>"
+I1121 08:35:30.901423       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/metrics-server-84c5f94fbc" duration="38.833566ms"
+I1121 08:35:30.902214       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/metrics-server-84c5f94fbc" duration="70.231µs"
+I1121 08:39:32.071142       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 08:44:38.424123       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 08:49:44.942035       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 08:54:49.900066       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 08:59:57.002252       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 09:00:49.719245       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-6c4fb4b677" duration="218.234311ms"
+I1121 09:00:49.804557       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-6c4fb4b677" duration="85.23109ms"
+I1121 09:00:49.804719       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-6c4fb4b677" duration="66.708µs"
+I1121 09:00:49.860499       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-6c4fb4b677" duration="39.371µs"
+I1121 09:00:49.921462       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-6c4fb4b677" duration="126.131µs"
+I1121 09:01:00.501341       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-6c4fb4b677" duration="25.741µs"
+I1121 09:01:10.285859       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-6c4fb4b677" duration="21.288546ms"
+I1121 09:01:10.288771       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-6c4fb4b677" duration="52.671µs"
+I1121 09:01:18.291593       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 09:06:24.061660       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 09:11:29.929424       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 09:16:36.596445       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 09:21:42.494980       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 09:26:49.384187       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 09:31:56.122791       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 09:37:02.760064       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 09:42:09.050958       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 09:47:15.144094       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 09:52:22.442588       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 09:57:28.774455       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 10:02:34.592749       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 10:07:40.780666       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 10:12:50.908624       1 cleaner.go:175] "Cleaning CSR as it is more than approvedExpiration duration old and approved." logger="certificatesigningrequest-cleaner-controller" csr="csr-22glm" approvedExpiration="1h0m0s"
+I1121 10:12:51.418018       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 10:17:57.315561       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 10:23:03.424746       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 10:28:06.839109       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 10:33:13.419939       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+E1121 10:35:57.548615       1 resource_quota_controller.go:446] "Unhandled Error" err="unable to retrieve the complete list of server APIs: metrics.k8s.io/v1beta1: stale GroupVersion discovery: metrics.k8s.io/v1beta1" logger="UnhandledError"
+I1121 10:35:57.565118       1 garbagecollector.go:826] "failed to discover some groups" logger="garbage-collector-controller" groups="<internal error: json: unsupported type: map[schema.GroupVersion]error>"
+E1121 10:36:27.757537       1 resource_quota_controller.go:446] "Unhandled Error" err="unable to retrieve the complete list of server APIs: metrics.k8s.io/v1beta1: stale GroupVersion discovery: metrics.k8s.io/v1beta1" logger="UnhandledError"
+I1121 10:36:27.850605       1 garbagecollector.go:826] "failed to discover some groups" logger="garbage-collector-controller" groups="<internal error: json: unsupported type: map[schema.GroupVersion]error>"
+I1121 10:38:21.602086       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 10:42:53.565144       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-66cf5dcf59" duration="60.282856ms"
+I1121 10:42:53.585080       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-66cf5dcf59" duration="19.837973ms"
+I1121 10:42:53.585706       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-66cf5dcf59" duration="31.867µs"
+I1121 10:42:53.631742       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-66cf5dcf59" duration="76.121µs"
+I1121 10:42:53.672940       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-66cf5dcf59" duration="69.417µs"
+I1121 10:42:59.728699       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-66cf5dcf59" duration="38.62µs"
+I1121 10:43:04.307929       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-66cf5dcf59" duration="20.399212ms"
+I1121 10:43:04.308084       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-66cf5dcf59" duration="63.628µs"
+I1121 10:43:04.369253       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-6c4fb4b677" duration="43.465409ms"
+I1121 10:43:04.379637       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-6c4fb4b677" duration="10.306595ms"
+I1121 10:43:04.379697       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-6c4fb4b677" duration="31.867µs"
+I1121 10:43:04.855065       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-6c4fb4b677" duration="93.979µs"
+I1121 10:43:05.868116       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-6c4fb4b677" duration="43.086µs"
+I1121 10:43:05.872882       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-6c4fb4b677" duration="64.172µs"
+E1121 10:43:10.315197       1 horizontal.go:275] "Unhandled Error" err="failed to compute desired number of replicas based on listed metrics for Deployment/default/scaletestapp-deployment: invalid metrics (1 invalid out of 1), first error is: failed to get memory resource metric value: failed to get memory utilization: unable to get metrics for resource memory: no metrics returned from resource metrics API" logger="UnhandledError"
+E1121 10:43:25.340856       1 horizontal.go:275] "Unhandled Error" err="failed to compute desired number of replicas based on listed metrics for Deployment/default/scaletestapp-deployment: invalid metrics (1 invalid out of 1), first error is: failed to get memory resource metric value: failed to get memory utilization: unable to get metrics for resource memory: no metrics returned from resource metrics API" logger="UnhandledError"
+I1121 10:43:27.486645       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 10:48:33.009524       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 10:52:07.427222       1 request.go:700] Waited for 17.52164879s due to client-side throttling, not priority and fairness, request: GET:https://192.168.49.2:8443/apis/apps/v1/namespaces/default/deployments/scaletestapp-deployment/scale
+I1121 10:53:37.437046       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 10:58:42.268817       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 10:58:56.714725       1 horizontal.go:886] "Successfully rescaled" logger="horizontal-pod-autoscaler-controller" HPA="default/scaletestapp-hpa" currentReplicas=1 desiredReplicas=2 reason="memory resource utilization (percentage of request) above target"
+I1121 10:58:56.818919       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-66cf5dcf59" duration="69.093894ms"
+I1121 10:58:56.974785       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-66cf5dcf59" duration="155.644949ms"
+I1121 10:58:56.974905       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-66cf5dcf59" duration="78.853µs"
+I1121 10:58:58.728179       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-66cf5dcf59" duration="58.629µs"
+I1121 10:59:02.843206       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-66cf5dcf59" duration="44.905µs"
+I1121 10:59:09.334865       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-66cf5dcf59" duration="17.883383ms"
+I1121 10:59:09.335041       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-66cf5dcf59" duration="63.189µs"
+I1121 11:03:42.639059       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 11:07:42.664435       1 horizontal.go:886] "Successfully rescaled" logger="horizontal-pod-autoscaler-controller" HPA="default/scaletestapp-hpa" currentReplicas=2 desiredReplicas=3 reason="memory resource utilization (percentage of request) above target"
+I1121 11:07:42.947585       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-66cf5dcf59" duration="162.269504ms"
+I1121 11:07:42.958173       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-66cf5dcf59" duration="10.518772ms"
+I1121 11:07:42.958810       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-66cf5dcf59" duration="60.463µs"
+I1121 11:07:42.963968       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-66cf5dcf59" duration="40.368µs"
+I1121 11:07:46.772168       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-66cf5dcf59" duration="50.998µs"
+I1121 11:07:53.311947       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-66cf5dcf59" duration="37.000617ms"
+I1121 11:07:53.316540       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/scaletestapp-deployment-66cf5dcf59" duration="82.854µs"
+I1121 11:08:43.849672       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 11:13:50.948023       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 11:18:56.873926       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 11:24:04.258388       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I1121 11:29:09.274081       1 range_allocator.go:241] "Successfully synced" logger="node-ipam-controller" key="minikube"
